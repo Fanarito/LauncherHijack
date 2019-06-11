@@ -1,4 +1,4 @@
-package com.baronkiko.launcherhijack;
+package com.baronkiko.nostealinggoingonhere;
 
 
 import android.content.Context;
@@ -22,6 +22,6 @@ public class ApplicationTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.baronkiko.launcherhijack", appContext.getPackageName());
+        assertEquals("com.baronkiko.nostealinggoingonhere", appContext.getPackageName());
     }
 }

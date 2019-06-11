@@ -1,4 +1,4 @@
-package com.baronkiko.launcherhijack;
+package com.baronkiko.nostealinggoingonhere;
 
 public interface OnHomePressedListener {
     public void onHomePressed();

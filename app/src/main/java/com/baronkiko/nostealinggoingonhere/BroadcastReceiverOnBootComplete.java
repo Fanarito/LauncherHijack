@@ -1,10 +1,9 @@
-package com.baronkiko.launcherhijack;
+package com.baronkiko.nostealinggoingonhere;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.util.Log;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -16,14 +15,14 @@ public class BroadcastReceiverOnBootComplete extends BroadcastReceiver {
         switch (intent.getAction())
         {
             case Intent.ACTION_PACKAGE_REMOVED:
-                SharedPreferences settings = context.getSharedPreferences("LauncherHijack", MODE_PRIVATE);
+                SharedPreferences settings = context.getSharedPreferences("NoStealingGoingOnHere", MODE_PRIVATE);
                 String s = settings.getString("ChosenLauncher", "");
 
                 if (intent.getData().getSchemeSpecificPart().equals(s))
                 {
                     SharedPreferences.Editor editor = settings.edit();
-                    editor.putString("ChosenLauncher", "com.baronkiko.launcherhijack");
-                    editor.putString("ChosenLauncherName", "com.baronkiko.launcherhijack.MainActivity");
+                    editor.putString("ChosenLauncher", "com.baronkiko.nostealinggoingonhere");
+                    editor.putString("ChosenLauncherName", "com.baronkiko.nostealinggoingonhere.MainActivity");
                     editor.commit(); // Commit the edits!
                 }
                 break;

@@ -1,4 +1,4 @@
-package com.baronkiko.launcherhijack;
+package com.baronkiko.nostealinggoingonhere;
 
 import org.junit.Test;
 

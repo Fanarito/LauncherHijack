@@ -1,12 +1,10 @@
-package com.baronkiko.launcherhijack;
+package com.baronkiko.nostealinggoingonhere;
 
-import android.accessibilityservice.AccessibilityService;
 import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.util.Log;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -19,9 +17,9 @@ public class HomePress {
 
     public static Intent GetDesiredIntent(Context c)
     {
-        SharedPreferences settings = c.getSharedPreferences("LauncherHijack", MODE_PRIVATE);
-        String s = settings.getString("ChosenLauncher", "com.baronkiko.launcherhijack");
-        String name = settings.getString("ChosenLauncherName", "com.baronkiko.launcherhijack.MainActivity");
+        SharedPreferences settings = c.getSharedPreferences("NoStealingGoingOnHere", MODE_PRIVATE);
+        String s = settings.getString("ChosenLauncher", "com.baronkiko.nostealinggoingonhere");
+        String name = settings.getString("ChosenLauncherName", "com.baronkiko.nostealinggoingonhere.MainActivity");
 
         ComponentName componentName = new ComponentName(s, name);
         Intent i = new Intent(Intent.ACTION_MAIN);

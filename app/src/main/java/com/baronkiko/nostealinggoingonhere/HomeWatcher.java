@@ -4,7 +4,7 @@
 
 
 
-package com.baronkiko.launcherhijack;
+package com.baronkiko.nostealinggoingonhere;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

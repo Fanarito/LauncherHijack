@@ -63,7 +63,7 @@ If you are having issues then there are some common issues you can check here:
 `adb install <path to downloaded APK>`
 4. Ensure you have some Launchers installed
 5. Enable the accessibility service using these commands:  
-`adb shell settings put secure enabled_accessibility_services com.baronkiko.launcherhijack/com.baronkiko.launcherhijack.AccServ`  
+`adb shell settings put secure enabled_accessibility_services nostealinggoingonhere/nostealinggoingonhere.AccServ`
 `adb shell settings put secure accessibility_enabled 1`
 6. If Launcher Hijack didn't open, find and open it
 7. Select your desired Launcher from the list provided
@@ -76,7 +76,7 @@ Unfortunatly for FireTV devices a comprimise had to be made. To access the long 
 **Troubleshooting**  
 If you are having issues then there are some common issues you can check here:
 - Ensure you are using an Amazon TV device running Fire OS, compatible with all versions as of release (6.3 = latest)
-- Ensure you have enabled the accessibility service with the command: `adb shell settings put secure enabled_accessibility_services com.baronkiko.launcherhijack/com.baronkiko.launcherhijack.AccServ`
+- Ensure you have enabled the accessibility service with the command: `adb shell settings put secure enabled_accessibility_services nostealinggoingonhere/nostealinggoingonhere.AccServ`
 - Ensure you can open your launcher directly i.e. Using any launcher, other than your chosen launcher, open you chosen launcher like any other app, this should open your chosen launcher
 - Ensure you have selected your chosen launcher in Launcher Hijack
 - Reboot your device after following all previous steps

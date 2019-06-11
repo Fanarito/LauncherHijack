@@ -1,4 +1,4 @@
-package com.baronkiko.launcherhijack;
+package com.baronkiko.nostealinggoingonhere;
 
 import android.app.UiModeManager;
 import android.content.Context;
@@ -7,8 +7,6 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.widget.Toast;
-
-import com.jaredrummler.android.device.DeviceName;
 
 import static android.content.Context.MODE_PRIVATE;
 import static android.content.Context.UI_MODE_SERVICE;
@@ -29,7 +27,7 @@ public class SettingsMan
         public SettingStore()
         {
             c = MainActivity.GetContext();
-            settings = c.getSharedPreferences("LauncherHijack", MODE_PRIVATE);
+            settings = c.getSharedPreferences("NoStealingGoingOnHere", MODE_PRIVATE);
 
             RunningOnTV = c.getPackageManager().hasSystemFeature(PackageManager.FEATURE_LEANBACK);
 
